@@ -1,0 +1,64 @@
+void setup() {
+  // put your setup code here, to run once:
+  for(int i=8;i<=15;i++)
+    pinMode(i,OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  //«G·t«G·t
+  for(int k=1;k<=2;k++)
+  {
+   for(int i=8;i<=15;i++)
+  {
+    digitalWrite(i,HIGH);
+  }
+  delay(500);
+   for(int i=8;i<=15;i++)
+  {
+    digitalWrite(i,LOW);
+  }
+  delay(500);
+  }
+  //¥ª8¦¸
+  for(int j=1;j<=8;j++)
+  {
+    for(int i=8;i<=15;i++)
+   {
+      digitalWrite(i,HIGH);
+      delay(100);
+    }
+     for(int i=8;i<=15;i++)
+    {
+         digitalWrite(i,LOW);
+    }
+  }
+ //«G·t«G·t
+ for(int k=1;k<=2;k++)
+  {
+  for(int i=8;i<=15;i++)
+  {
+    digitalWrite(i,HIGH);
+  }
+  delay(500);
+   for(int i=8;i<=15;i++)
+  {
+    digitalWrite(i,LOW);
+  }
+  delay(500);
+  }
+  //¥k8¦¸
+  for(int j=1;j<=8;j++)
+  {
+  for(int i=15;i>=8;i--)
+  {
+    digitalWrite(i,HIGH);
+    delay(100);
+  }
+     for(int i=15;i>=8;i--)
+    {
+         digitalWrite(i,LOW);
+ 
+    }
+  } 
+}
